@@ -1,0 +1,37 @@
+$xs: 768px
+$md: 992px
+$lg: 1200px
+$xl: 1900px
+
+$branco: #fff
+$azul-ceu: #122147
+$azul-escuro: #34495E
+$azul-claro: #2574A9
+
+=transform($valor)
+	-webkit-transform: rotate($valor)
+	-moz-transform: rotate($valor)
+	-o-transform: rotate($valor)
+	transform: rotate($valor)
+
+=transform-origin($direcao1 ,$direcao2)
+	-webkit-transform-origin: ($direcao1 ,$direcao2)
+	-moz-transform-origin: ($direcao1 ,$direcao2)
+	-o-transform-origin: ($direcao1 ,$direcao2)
+	transform-origin: ($direcao1 ,$direcao2)
+
+=transition($atributo, $tempo, $suavidade)
+	-webkit-transition: ($atributo $tempo $suavidade)
+	-moz-transition: ($atributo $tempo $suavidade)
+	-o-transition: ($atributo $tempo $suavidade)
+	transition: ($atributo $tempo $suavidade)
+
+=gradient($angle,$gradient1, $gradient2)
+	background-color: $gradient2 
+	background-image: -webkit-gradient(linear, $angle, from($gradient1), to($gradient2))
+	background-image: -webkit-linear-gradient($angle, $gradient1, $gradient2)
+	background-image:    -moz-linear-gradient($angle, $gradient1, $gradient2)
+	background-image:     -ms-linear-gradient($angle, $gradient1, $gradient2)
+	background-image:      -o-linear-gradient($angle, $gradient1, $gradient2)
+	background-image:         linear-gradient($angle, $gradient1, $gradient2)
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#{$gradient1}', EndColorStr='#{$gradient2}')
