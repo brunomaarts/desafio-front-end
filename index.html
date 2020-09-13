@@ -1,11 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/slide.js"></script>
+
+    <title>Minuto News</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      
+      <header id="header">
+        <div class="content-header">
+          <div class="logo">
+            <a href="index.html" rel="Minuto News" title="Minuto News">
+              <img src="public/logo-minuto.svg" alt="Minuto News">
+            </a>
+          </div>
+          <nav id="navbar">
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li class="submenu">
+                <a href="#">Brasil</a>
+                <ul>
+                  <li><a href="#">Submenu 01</a></li>
+                  <li><a href="#">Submenu 02</a></li>
+                  <li><a href="#">Submenu 03</a></li>
+                  <li><a href="#">Submenu 04</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Mundo</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Assine</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div id="slide">
+        <div class="content">
+          <ul class="slider-list">
+          </ul>
+        </div>
+        <div class="controls">
+          <div class="arrows">
+            <div class="arrow arrow-right"> > </div>
+            <div class="arrow arrow-left"> < </div>
+          </div>
+          <div class="dots"></div>
+        </div>
+      </div>
+      
+      <section id="notices">
+        <div class="header">
+          <h3>Editoriais</h3>
+          <div class="filters">
+            <div class="filter">
+              Ordernar por:
+              <select name="order_date">
+                <option disable select value=""> Data </option>
+              </select>
+            </div>
+            <div class="filter">
+              Filtrar por:
+              <select name="filter_category">
+                <option disable select value=""> Editoria </option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+      </footer>
+    </div>
+  </body>
 </html>

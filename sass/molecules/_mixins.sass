@@ -3,10 +3,14 @@ $md: 992px
 $lg: 1200px
 $xl: 1900px
 
-$branco: #fff
-$azul-ceu: #122147
-$azul-escuro: #34495E
+$red: #b22d30
+$black: #000000
+$white: #ffffff
 $azul-claro: #2574A9
+
+=breakpoint($point)
+	@media (min-width: $point)
+		@content
 
 =transform($valor)
 	-webkit-transform: rotate($valor)

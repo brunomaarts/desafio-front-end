@@ -1,0 +1,80 @@
+#slide
+  position: relative
+  height: 500px
+
+  .content
+    width: 100%
+    height: 500px
+    overflow: hidden
+
+    ul
+      position: relative
+
+      li
+        float: left
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 500px
+
+        img 
+          display: block
+          width: 100vw
+          height: 100%
+          object-fit: cover
+
+  .controls
+    position: absolute
+    top: 0px
+    left: 0px
+    width: 100%
+    height: 100%
+
+    .arrows
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+
+      .arrow
+        width: 55px
+        height: 70px
+        background-color: $red
+        display: flex
+        align-items: center
+        justify-content: center
+        color: $white
+        font-size: 60px
+        position: absolute
+        margin: 0px auto
+        line-height: 0px
+        cursor: pointer
+
+        &.arrow-right
+          right: 80px
+        
+        &.arrow-left
+          left: 80px
+
+    .dots
+      position: absolute
+      left: 0px
+      right: 0px
+      bottom: 35px
+      display: flex
+      align-items: center
+      justify-content: center
+
+      span 
+        display: inline-block
+        width: 15px
+        height: 15px
+        border: 3px solid $black
+        margin: 0px 5px
+        cursor: pointer
+        transition: border-color 0.2s ease
+        background-color: $white
+
+        &:hover,
+        &.active
+          border-color: $red

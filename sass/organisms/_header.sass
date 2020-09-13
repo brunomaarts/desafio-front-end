@@ -1,0 +1,80 @@
+header#header
+  border-bottom: 3px solid $red
+
+  .content-header
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    max-width: 1090px
+    width: 100%
+    margin: 0px auto
+    padding: 15px 
+    
+    .logo
+      a
+        display: block
+
+        img 
+          max-width: 340px
+
+  nav#navbar
+    >ul 
+      display: flex
+      margin-bottom: 20px
+
+      >li
+        position: relative
+      
+        a
+          display: inline-block
+          margin-right: 15px
+          font-size: 22px
+          color: $black
+          transition: color 0.2s ease
+
+        &:last-child
+          a 
+            margin-right: 0px
+            
+        &:hover
+          >a
+            color: $red
+        
+        &.submenu
+
+          a
+            display: flex
+            align-items: center
+
+            &:after
+              content: ""
+              height: 0
+              margin-left: 5px
+              border-left: 5px solid transparent
+              border-right: 5px solid transparent
+              border-top: 5px solid black
+
+          ul
+            display: none
+            width: 220px
+            position: absolute
+            background-color: $white
+            border-bottom: 3px solid $red
+            padding: 5px 0px
+            z-index: 1000
+
+            li
+              a
+                margin: 5px 15px  
+                font-size: 18px
+
+                &:after
+                  display: none
+                
+                &:hover
+                  color: $black
+                  font-weight: bold
+
+          &:hover 
+            ul 
+              display: block

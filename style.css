@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+* {
+  font-family: 'Quicksand', sans-serif; }
+
+html, body {
+  height: 100%; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+header#header {
+  border-bottom: 3px solid #b22d30; }
+  header#header .content-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 1090px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 15px; }
+    header#header .content-header .logo a {
+      display: block; }
+      header#header .content-header .logo a img {
+        max-width: 340px; }
+  header#header nav#navbar > ul {
+    display: flex;
+    margin-bottom: 20px; }
+    header#header nav#navbar > ul > li {
+      position: relative; }
+      header#header nav#navbar > ul > li a {
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 22px;
+        color: #000000;
+        transition: color 0.2s ease; }
+      header#header nav#navbar > ul > li:last-child a {
+        margin-right: 0px; }
+      header#header nav#navbar > ul > li:hover > a {
+        color: #b22d30; }
+      header#header nav#navbar > ul > li.submenu a {
+        display: flex;
+        align-items: center; }
+        header#header nav#navbar > ul > li.submenu a:after {
+          content: "";
+          height: 0;
+          margin-left: 5px;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 5px solid black; }
+      header#header nav#navbar > ul > li.submenu ul {
+        display: none;
+        width: 220px;
+        position: absolute;
+        background-color: #ffffff;
+        border-bottom: 3px solid #b22d30;
+        padding: 5px 0px;
+        z-index: 1000; }
+        header#header nav#navbar > ul > li.submenu ul li a {
+          margin: 5px 15px;
+          font-size: 18px; }
+          header#header nav#navbar > ul > li.submenu ul li a:after {
+            display: none; }
+          header#header nav#navbar > ul > li.submenu ul li a:hover {
+            color: #000000;
+            font-weight: bold; }
+      header#header nav#navbar > ul > li.submenu:hover ul {
+        display: block; }
+
+#slide {
+  position: relative;
+  height: 500px; }
+  #slide .content {
+    width: 100%;
+    height: 500px;
+    overflow: hidden; }
+    #slide .content ul {
+      position: relative; }
+      #slide .content ul li {
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px; }
+        #slide .content ul li img {
+          display: block;
+          width: 100vw;
+          height: 100%;
+          object-fit: cover; }
+  #slide .controls {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%; }
+    #slide .controls .arrows {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #slide .controls .arrows .arrow {
+        width: 55px;
+        height: 70px;
+        background-color: #b22d30;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 60px;
+        position: absolute;
+        margin: 0px auto;
+        line-height: 0px;
+        cursor: pointer; }
+        #slide .controls .arrows .arrow.arrow-right {
+          right: 80px; }
+        #slide .controls .arrows .arrow.arrow-left {
+          left: 80px; }
+    #slide .controls .dots {
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #slide .controls .dots span {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border: 3px solid #000000;
+        margin: 0px 5px;
+        cursor: pointer;
+        transition: border-color 0.2s ease;
+        background-color: #ffffff; }
+        #slide .controls .dots span:hover, #slide .controls .dots span.active {
+          border-color: #b22d30; }
