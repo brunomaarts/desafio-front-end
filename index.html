@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/style.css">
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="js/slide.js"></script>
+    <script src="js/notices.js"></script>
 
     <title>Minuto News</title>
   </head>
@@ -54,21 +55,33 @@
       </div>
       
       <section id="notices">
-        <div class="header">
-          <h3>Editoriais</h3>
-          <div class="filters">
-            <div class="filter">
-              Ordernar por:
-              <select name="order_date">
-                <option disable select value=""> Data </option>
-              </select>
+        <div class="wrapper-notice">
+          <div class="header">
+            <h3>Editoriais</h3>
+            <div class="filters">
+  
+              <div class="filter">
+                <span>Ordernar por:</span>
+                <div class="box-select">
+                  <select name="date_filter" id="date_filter">
+                    <option disable select value=""> Data </option>
+                  </select>
+                </div> 
+              </div>
+  
+              <div class="filter">
+                <span>Filtrar por:</span>
+                <div class="box-select">
+                  <select name="category_filter" id="category_filter">
+                    <option disable select value=""> Editoria </option>
+                  </select>
+                </div>
+              </div>
+  
             </div>
-            <div class="filter">
-              Filtrar por:
-              <select name="filter_category">
-                <option disable select value=""> Editoria </option>
-              </select>
-            </div>
+          </div>
+          <div class="content-notices">
+            <ul> </ul>
           </div>
         </div>
       </section>
