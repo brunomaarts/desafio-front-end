@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="js/slide.js"></script>
-    <script src="js/notices.js"></script>
 
     <title>Minuto News</title>
   </head>
@@ -19,6 +16,11 @@
             <a href="index.html" rel="Minuto News" title="Minuto News">
               <img src="public/logo-minuto.svg" alt="Minuto News">
             </a>
+          </div>
+          <div id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
           <nav id="navbar">
             <ul>
@@ -45,6 +47,7 @@
           <ul class="slider-list">
           </ul>
         </div>
+
         <div class="controls">
           <div class="arrows">
             <div class="arrow arrow-right"> > </div>
@@ -85,9 +88,102 @@
           </div>
         </div>
       </section>
+      
+      <section id="editorials">
+        <div class="wrapper-editorial">
+          <div class="header">
+            <h3>Editoriais mais acessadas</h3>
+          </div>
+          <div class="content-editorial">
+            <div class="graphics">
+              <div id="chart" style="width: 80%;"></div>
+            </div>
+            <div class="text-graphic">
+              <h4>Título aqui</h4>
+              <div class="content-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="contacts">
+        <div id="map"></div>
+        <div class="wrapper-contacts">
+          
+          <div class="text-contact">
+            <div class="content-text">
+              <div class="header">
+                <h3>Entre em contato</h3>
+              </div>
+              
+              <h4>Onde nos achar</h4>
+              
+              <address>
+                Rua dos Alfeneiros, número 4<br>
+                00-91102<br>
+                Little Whitning<br>
+                Londres/Inglatera
+              </address>
+              
+              <div class="phones">
+                <p><a href="tel:2140041234">(21) 4004 - 1234</a></p>
+                <p><a href="tel:2140044321">(21) 4004 - 4321</a></p>
+              </div>
+  
+              <div class="mail">
+                <p><a href="mail:contato@minutonews.com.br">contato@minutonews.com.br</a></p>
+              </div>
+  
+              <p>Aberto de segunda a sexta das 09h as 19h</p>
+            </div>
+          </div>
 
-      <footer>
+          <div class="form-contact">
+            <div class="form">
+              <p>Mande uma mensagem</p>
+              <form action="">
+                <div class="group-input">
+                  <label for="name">Seu nome:</label>
+                  <input type="text" name="name" id="name">
+                </div>
+                <div class="group-input">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email">
+                </div>
+                <div class="group-input">
+                  <label for="message">Mensagem:</label>
+                  <textarea 
+                    name="message" 
+                    id="message" 
+                    cols="30" 
+                    rows="6">
+                  </textarea>
+                </div>
+                <button type="submit"> Enviar </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer">
+        <p>© Entrevista | Front-End</p>
       </footer>
+
+      <div id="blackshadow"></div>
     </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABHOlsoOroZmqVik1Ihsie5zqawN0wuxI&callback=initMap"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/notices.js"></script>
+    <script src="js/graphics.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/menu.js"></script>
+
   </body>
 </html>

@@ -1,0 +1,47 @@
+#editorials
+
+  .wrapper-editorial
+
+    >.header
+
+    .content-editorial
+      +breakpoint($lg)
+        display: flex
+        align-items: flex-end
+      
+
+      .graphics,
+      .text-graphic
+        +breakpoint($lg)
+          max-width: 50%
+          flex: 1 0 50%
+
+      .graphics
+        display: flex
+        align-items: flex-end
+        justify-content: center
+        margin-bottom: 30px
+        +breakpoint($lg)
+          margin-bottom: 0px
+
+        .chart
+          width: 100%
+          max-width: 420px
+
+      .text-graphic
+        h4 
+          padding: 15px
+          font-size: 28px
+          font-weight: bold
+
+        .content-text
+          +breakpoint($lg)
+            display: flex
+
+          p
+            padding: 15px
+            text-align: justify
+            line-height: 22px
+            font-size: 18
+            font-family: "Verdana"
+      
